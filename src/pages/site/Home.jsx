@@ -9,10 +9,10 @@ export default function Home() {
         {/*Header*/}
         <Header />
 
-        <div className="min-h-screen flex items-center justify-center bg-blue-950 text-white p-6 shadow-lg space-x-4">
+        <section className="min-h-screen flex items-center justify-center bg-blue-950 text-white p-6 shadow-lg space-x-4">
             <i className="fas fa-laptop-code text-3xl"></i>
-            <h1 className="text-2xl font-bold">Fimbatech</h1>
-        </div>
+            <h1 className="text-2xl font-bold">Fimbatec</h1>
+        </section>
 
         {/*Footer*/}
         <Footer />
