@@ -15,7 +15,7 @@ export default function Header() {
     >
       {/* Logo */}
       <Link to="/" className="text-2xl font-bold tracking-wide z-50">
-        FIMBATECH
+        FIMBATEC
       </Link>
 
       {/* MENU ÚNICO */}
@@ -56,7 +56,7 @@ export default function Header() {
       </nav>
 
       {/* BOTÃO MOBILE ANIMADO */}
-      <button
+      <div
         onClick={() => setOpen(!open)}
         className="
           md:hidden text-gray-100 text-3xl z-50 
@@ -71,7 +71,7 @@ export default function Header() {
               : "fa-bars rotate-0 scale-100"}
           `}
         ></i>
-      </button>
+      </div>
     </header>
   );
 }
