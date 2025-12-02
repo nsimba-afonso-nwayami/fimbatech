@@ -50,7 +50,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Nossas Soluções - Seção com vídeo de fundo */}
+      {/* Nossas Soluções */}
       <section className="relative py-24 text-white overflow-hidden">
         <video
           src={VideoHome}
@@ -60,7 +60,7 @@ export default function Home() {
           className="absolute inset-0 w-full h-full object-cover"
         ></video>
 
-        {/* Overlay escuro + blur leve */}
+        {/* Overlay escuro */}
         <div className="absolute inset-0 bg-black/70 backdrop-blur-sm"></div>
 
         <div className="relative max-w-6xl mx-auto px-6 md:px-10">
@@ -147,7 +147,7 @@ export default function Home() {
       {/* Por que escolher a FimbaTec */}
       <section className="relative py-24 text-white overflow-hidden bg-gray-950 bg-linear-to-br from-gray-950 to-blue-950">
         <div className="relative max-w-6xl mx-auto px-6 md:px-10 text-center">
-          {/* Título */}
+          
           <h2 className="text-4xl md:text-5xl font-bold mb-14 text-white">
             Por que escolher a FimbaTec
           </h2>
@@ -206,16 +206,14 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Seção Catálogo → Sistemas de Ponta */}
+      {/* Seção Catálogo */}
       <section className="relative py-24 text-white overflow-hidden bg-gray-950 bg-linear-to-br from-gray-950 to-blue-950">
         <div className="relative max-w-6xl mx-auto px-6 md:px-10 text-center">
           
-          {/* Título da seção */}
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-white">
             Sistemas de Ponta
           </h2>
 
-          {/* Descrição adicional */}
           <p className="text-gray-300 max-w-3xl mx-auto mb-16 text-lg">
             Explore nosso catálogo de soluções prontas para uso e descubra como a tecnologia
             pode transformar seu negócio hoje.
