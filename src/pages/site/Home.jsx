@@ -314,6 +314,8 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Depoimentos */}
+
       {/* Footer */}
       <Footer />
     </>
