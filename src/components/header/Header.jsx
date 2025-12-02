@@ -1,39 +1,73 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  //verificando o scroll
+  useEffect(() => {
+    const handleScroll = () => setScrolled(window.scrollY > 50);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <header
-      className="
-        w-full fixed top-0 left-0 
-        bg-blue-950 text-gray-100 shadow-lg 
-        flex items-center justify-between 
+      className={`
+        w-full fixed top-0 left-0
+        flex items-center justify-between
         px-6 py-4 z-50
-      "
+        rounded-b-2xl
+        transition-all duration-500 ease-in-out
+
+        ${scrolled
+          ? "bg-linear-to-b from-blue-900/40 to-blue-950/20 backdrop-blur-3xl shadow-2xl border-b border-white/10"
+          : "bg-transparent shadow-none border-none"
+        }
+        text-gray-100
+      `}
     >
-      {/* Logo */}
-      <Link to="/" className="text-2xl font-bold tracking-wide z-50">
-        FIMBATEC
+      {/* Logo + ícone */}
+      <Link to="/" className="flex items-center gap-2 text-2xl font-bold tracking-wide z-50">
+        <i className="fas fa-microchip text-cyan-400"></i>
+        <span className="text-gray-100">FIMBATEC</span>
       </Link>
 
-      {/* MENU ÚNICO */}
+      {/* Overlay escuro mobile */}
+      <div
+        onClick={() => setOpen(false)}
+        className={`
+          fixed inset-0
+          bg-black/80 backdrop-blur-sm
+          h-screen w-screen
+          transition-opacity duration-500
+          md:hidden z-40
+          ${open ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"}
+        `}
+      ></div>
+
+      {/* Menu */}
       <nav
         className={`
-          flex flex-col gap-6 
-          absolute md:static 
-          top-full left-0 w-full md:w-auto
-          bg-blue-900 md:bg-transparent
-          px-6 py-6 md:p-0
-          md:flex md:flex-row md:items-center md:gap-8
-          transition-all duration-300 ease-in-out
-          z-40
+          flex flex-col gap-6
+          absolute md:static
+          top-0 right-0 h-screen md:h-auto
+          w-72 md:w-auto
 
+          bg-gray-900/50 md:bg-transparent backdrop-blur-xl md:backdrop-blur-0
+          border-l border-gray-800 md:border-none
+
+          px-8 py-24 md:p-0
+          md:flex md:flex-row md:items-center md:gap-8
+
+          transition-transform duration-500 ease-in-out
           ${open
-            ? "opacity-100 pointer-events-auto translate-y-0"
-            : "opacity-0 pointer-events-none -translate-y-4 md:opacity-100 md:pointer-events-auto md:translate-y-0"
+            ? "translate-x-0 pointer-events-auto"
+            : "translate-x-full pointer-events-none md:translate-x-0 md:pointer-events-auto"
           }
+          z-50
+          text-gray-100
         `}
       >
         <Link to="/" className="hover:text-cyan-400">Home</Link>
@@ -47,31 +81,26 @@ export default function Header() {
         <a
           href="#orcamento"
           className="
-            bg-violet-600 px-5 py-2 rounded-lg text-white font-semibold 
-            hover:bg-violet-700 transition text-center
+            bg-blue-600 px-5 py-2 rounded-lg text-white font-semibold
+            hover:bg-blue-700 transition text-center
           "
         >
           Solicite um orçamento
         </a>
       </nav>
 
-      {/* BOTÃO MOBILE ANIMADO */}
-      <div
+      {/* Botão mobile */}
+      <button
         onClick={() => setOpen(!open)}
-        className="
-          md:hidden text-gray-100 text-3xl z-50 
-          transition-transform duration-300
-        "
+        className="md:hidden text-gray-100 text-3xl z-50 transition-transform duration-300"
       >
         <i
           className={`
             fas transition-all duration-300
-            ${open 
-              ? "fa-times rotate-180 scale-110" 
-              : "fa-bars rotate-0 scale-100"}
+            ${open ? "fa-times rotate-180 scale-110" : "fa-bars rotate-0 scale-100"}
           `}
         ></i>
-      </div>
+      </button>
     </header>
   );
 }
