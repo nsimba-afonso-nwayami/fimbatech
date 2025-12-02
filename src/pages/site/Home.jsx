@@ -4,6 +4,9 @@ import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import HeroImg from "../../assets/img/home.jpg";
 import VideoHome from "../../assets/video/video.mp4";
+import SistemaImg1 from "../../assets/img/home1.jpg";
+import SistemaImg2 from "../../assets/img/home2.jpg";
+import SistemaImg3 from "../../assets/img/home3.jpg";
 
 export default function Home() {
   return (
@@ -197,6 +200,106 @@ export default function Home() {
               <p className="text-gray-300 text-sm leading-relaxed mb-4">
                 Escolhas tecnológicas precisas, com orientação especializada para garantir segurança, desempenho e evolução contínua do seu projeto.
               </p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      {/* Seção Catálogo → Sistemas de Ponta */}
+      <section className="relative py-24 text-white overflow-hidden bg-gray-950 bg-linear-to-br from-gray-950 to-blue-950">
+        <div className="relative max-w-6xl mx-auto px-6 md:px-10 text-center">
+          
+          {/* Título da seção */}
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-white">
+            Sistemas de Ponta
+          </h2>
+
+          {/* Descrição adicional (Novo) */}
+          <p className="text-gray-300 max-w-3xl mx-auto mb-16 text-lg">
+            Explore nosso catálogo de soluções prontas para uso e descubra como a tecnologia
+            pode transformar seu negócio hoje.
+          </p>
+
+          {/* Grid de cards */}
+          <div className="grid md:grid-cols-3 gap-10">
+            
+            {/* Card 1 */}
+            <div className="bg-white/10 backdrop-blur-lg border border-white/10 rounded-2xl p-6 shadow-2xl hover:bg-white/20 transition duration-300 text-left">
+              {/* Imagem */}
+              <img 
+                src={SistemaImg1} 
+                alt="Sistema 1 - ERP" 
+                className="w-full h-48 object-cover rounded-xl mb-4"
+              />
+              <i className="fa-solid fa-server text-4xl text-cyan-400 mb-4"></i> {/* Ícone Adicionado */}
+              <h3 className="text-2xl font-semibold mb-2 text-gray-100">
+                Sistema 1: ERP Inteligente
+              </h3>
+              <p className="text-gray-300 text-sm leading-relaxed mb-4">
+                Otimize a gestão empresarial com controle financeiro, estoque e RH integrados, 
+                tudo em uma plataforma robusta e escalável.
+              </p>
+              {/* Botão de Ação (Novo) */}
+              <Link 
+                to="#" 
+                className="text-cyan-400 font-semibold hover:underline flex items-center gap-2"
+              >
+                Ver detalhes 
+                <i className="fa-solid fa-arrow-right text-sm"></i>
+              </Link>
+            </div>
+
+            {/* Card 2 */}
+            <div className="bg-white/10 backdrop-blur-lg border border-white/10 rounded-2xl p-6 shadow-2xl hover:bg-white/20 transition duration-300 text-left">
+              {/* Imagem */}
+              <img 
+                src={SistemaImg2} 
+                alt="Sistema 2 - CRM" 
+                className="w-full h-48 object-cover rounded-xl mb-4"
+              />
+              <i className="fa-solid fa-headset text-4xl text-cyan-400 mb-4"></i> {/* Ícone Adicionado */}
+              <h3 className="text-2xl font-semibold mb-2 text-gray-100">
+                Sistema 2: CRM Multicanal
+              </h3>
+              <p className="text-gray-300 text-sm leading-relaxed mb-4">
+                Gerencie o relacionamento com o cliente de forma eficaz, centralizando comunicações, 
+                histórico de vendas e suporte em um só lugar.
+              </p>
+              {/* Botão de Ação (Novo) */}
+              <Link 
+                to="#" 
+                className="text-cyan-400 font-semibold hover:underline flex items-center gap-2"
+              >
+                Ver detalhes 
+                <i className="fa-solid fa-arrow-right text-sm"></i>
+              </Link>
+            </div>
+
+            {/* Card 3 */}
+            <div className="bg-white/10 backdrop-blur-lg border border-white/10 rounded-2xl p-6 shadow-2xl hover:bg-white/20 transition duration-300 text-left">
+              {/* Imagem */}
+              <img 
+                src={SistemaImg3} 
+                alt="Sistema 3 - Analytics" 
+                className="w-full h-48 object-cover rounded-xl mb-4"
+              />
+              <i className="fa-solid fa-chart-line text-4xl text-cyan-400 mb-4"></i> {/* Ícone Adicionado */}
+              <h3 className="text-2xl font-semibold mb-2 text-gray-100">
+                Sistema 3: Painel de Analytics
+              </h3>
+              <p className="text-gray-300 text-sm leading-relaxed mb-4">
+                Obtenha *insights* valiosos do seu negócio com dashboards interativos, 
+                relatórios em tempo real e visualização de dados simplificada.
+              </p>
+              {/* Botão de Ação (Novo) */}
+              <Link 
+                to="#" 
+                className="text-cyan-400 font-semibold hover:underline flex items-center gap-2"
+              >
+                Ver detalhes 
+                <i className="fa-solid fa-arrow-right text-sm"></i>
+              </Link>
             </div>
 
           </div>
