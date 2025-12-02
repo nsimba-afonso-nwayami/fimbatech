@@ -215,7 +215,7 @@ export default function Home() {
             Sistemas de Ponta
           </h2>
 
-          {/* Descrição adicional (Novo) */}
+          {/* Descrição adicional */}
           <p className="text-gray-300 max-w-3xl mx-auto mb-16 text-lg">
             Explore nosso catálogo de soluções prontas para uso e descubra como a tecnologia
             pode transformar seu negócio hoje.
@@ -240,7 +240,7 @@ export default function Home() {
                 Otimize a gestão empresarial com controle financeiro, estoque e RH integrados, 
                 tudo em uma plataforma robusta e escalável.
               </p>
-              {/* Botão de Ação (Novo) */}
+              {/* Botão de Ação (Link) */}
               <Link 
                 to="#" 
                 className="text-cyan-400 font-semibold hover:underline flex items-center gap-2"
@@ -266,7 +266,7 @@ export default function Home() {
                 Gerencie o relacionamento com o cliente de forma eficaz, centralizando comunicações, 
                 histórico de vendas e suporte em um só lugar.
               </p>
-              {/* Botão de Ação (Novo) */}
+              {/* Botão de Ação (Link) */}
               <Link 
                 to="#" 
                 className="text-cyan-400 font-semibold hover:underline flex items-center gap-2"
@@ -292,7 +292,7 @@ export default function Home() {
                 Obtenha *insights* valiosos do seu negócio com dashboards interativos, 
                 relatórios em tempo real e visualização de dados simplificada.
               </p>
-              {/* Botão de Ação (Novo) */}
+              {/* Botão de Ação (Link) */}
               <Link 
                 to="#" 
                 className="text-cyan-400 font-semibold hover:underline flex items-center gap-2"
@@ -302,6 +302,16 @@ export default function Home() {
               </Link>
             </div>
 
+          </div>
+          
+          <div className="mt-16">
+            <Link
+              to="/catalogo"
+              className="bg-blue-600 px-8 py-4 rounded-lg text-white-950 font-bold text-lg hover:bg-blue-700 transition shadow-xl"
+            >
+              <i className="fa-solid fa-book-open mr-3"></i>
+              Ver Catálogo Completo
+            </Link>
           </div>
         </div>
       </section>
