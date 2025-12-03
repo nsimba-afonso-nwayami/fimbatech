@@ -71,22 +71,22 @@ export default function Header() {
         `}
       >
         <Link to="/" className="hover:text-cyan-400">Home</Link>
-        <a href="#sobre" className="hover:text-cyan-400">Sobre</a>
-        <a href="#servicos" className="hover:text-cyan-400">Serviços</a>
-        <a href="#tecnologia" className="hover:text-cyan-400">Tecnologia</a>
-        <a href="#recursos" className="hover:text-cyan-400">Recursos</a>
-        <a href="#contato" className="hover:text-cyan-400">Contato</a>
-        <a href="#faq" className="hover:text-cyan-400">FAQ</a>
+        <Link to="#sobre" className="hover:text-cyan-400">Sobre</Link>
+        <Link to="#servicos" className="hover:text-cyan-400">Serviços</Link>
+        <Link to="#tecnologia" className="hover:text-cyan-400">Tecnologia</Link>
+        <Link to="#recursos" className="hover:text-cyan-400">Recursos</Link>
+        <Link to="#contato" className="hover:text-cyan-400">Contato</Link>
+        <Link href="#faq" className="hover:text-cyan-400">FAQ</Link>
 
-        <a
-          href="#orcamento"
+        <Link
+          to="#orcamento"
           className="
             bg-blue-600 px-5 py-2 rounded-lg text-white font-semibold
             hover:bg-blue-700 transition text-center
           "
         >
           Solicite um orçamento
-        </a>
+        </Link>
       </nav>
 
       {/* Botão mobile */}
