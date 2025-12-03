@@ -64,6 +64,8 @@ export default function Home() {
 
   return (
     <>
+      <title>FimbaTec</title>
+      
       {/* Header */}
       <Header />
 
