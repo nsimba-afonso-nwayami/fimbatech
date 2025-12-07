@@ -71,12 +71,12 @@ export default function Home() {
       <title>FimbaTec</title>
       {/* Header */}
       <Header />
+
       {/* Hero Section */}
       <section
         className="hero w-full h-[90vh] bg-cover bg-center bg-fixed relative flex items-center"
         style={{ backgroundImage: `url(${HeroImg})` }}
       >
-        {/* Overlay escuro */}
         <div className="absolute inset-0 bg-black/70"></div>
 
         {/* Conteúdo */}
@@ -100,7 +100,7 @@ export default function Home() {
             </a>
             <a
               href="#"
-              className="bg-transparent text-center border border-cyan-400 px-6 py-3 rounded-lg text-cyan-400 font-semibold hover:bg-cyan-400 hover:text-blue-950 transition shadow-md"
+              className="bg-transparent text-center border border-blue-400 px-6 py-3 rounded-lg text-cyan-400 font-semibold hover:bg-blue-400 hover:text-blue-950 transition shadow-md"
             >
               Tecnologia
             </a>
@@ -219,7 +219,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      {/* Por que escolher a FimbaTec */}
+      
       <section className="relative py-24 text-white overflow-hidden bg-gray-950 bg-linear-to-br from-gray-950 to-blue-950">
         <div className="relative max-w-6xl mx-auto px-6 md:px-10 text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-14 text-white">
@@ -227,7 +227,6 @@ export default function Home() {
           </h2>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {/* Card 1 */}
             <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-8 hover:bg-white/10 transition duration-300 shadow-2xl">
               <i className="fa-solid fa-laptop-code text-4xl text-cyan-400 mb-4"></i>
               <h3 className="text-2xl font-semibold mb-3 text-gray-100">WEB</h3>
@@ -250,7 +249,6 @@ export default function Home() {
               </p>
             </div>
 
-            {/* Card 3 */}
             <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-8 hover:bg-white/10 transition duration-300 shadow-2xl">
               <i className="fa-solid fa-mobile-screen text-4xl text-cyan-400 mb-4"></i>
               <h3 className="text-2xl font-semibold mb-3 text-gray-100">
@@ -261,7 +259,6 @@ export default function Home() {
               </p>
             </div>
 
-            {/* Card 4 */}
             <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-8 hover:bg-white/10 transition duration-300 shadow-2xl">
               <i className="fa-solid fa-user-tie text-4xl text-cyan-400 mb-4"></i>
               <h3 className="text-2xl font-semibold mb-3 text-gray-100">
@@ -276,7 +273,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      {/* Seção Catálogo */}
+      
       <section className="relative py-24 text-white overflow-hidden bg-gray-950 bg-linear-to-br from-gray-950 to-blue-950">
         <div className="relative max-w-6xl mx-auto px-6 md:px-10 text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-white">
@@ -288,18 +285,14 @@ export default function Home() {
             a tecnologia pode transformar seu negócio hoje.
           </p>
 
-          {/* Grid de cards */}
           <div className="grid md:grid-cols-3 gap-10">
-            {/* Card 1 */}
             <div className="bg-white/10 backdrop-blur-lg border border-white/10 rounded-2xl p-6 shadow-2xl hover:bg-white/20 transition duration-300 text-left">
-              {/* Imagem */}
               <img
                 src={SistemaImg1}
                 alt="Sistema 1 - ERP"
                 className="w-full h-48 object-cover rounded-xl mb-4"
               />
-              <i className="fa-solid fa-server text-4xl text-cyan-400 mb-4"></i>{" "}
-              {/* Ícone Adicionado */}
+              <i className="fa-solid fa-server text-4xl text-cyan-400 mb-4"></i>
               <h3 className="text-2xl font-semibold mb-2 text-gray-100">
                 Sistema 1: ERP Inteligente
               </h3>
@@ -307,7 +300,6 @@ export default function Home() {
                 Otimize a gestão empresarial com controle financeiro, estoque e
                 RH integrados, tudo em uma plataforma robusta e escalável.
               </p>
-              {/* Botão de Ação (Link) */}
               <Link
                 to="#"
                 className="text-cyan-400 font-semibold hover:underline flex items-center gap-2"
@@ -317,16 +309,13 @@ export default function Home() {
               </Link>
             </div>
 
-            {/* Card 2 */}
             <div className="bg-white/10 backdrop-blur-lg border border-white/10 rounded-2xl p-6 shadow-2xl hover:bg-white/20 transition duration-300 text-left">
-              {/* Imagem */}
               <img
                 src={SistemaImg2}
                 alt="Sistema 2 - CRM"
                 className="w-full h-48 object-cover rounded-xl mb-4"
               />
-              <i className="fa-solid fa-headset text-4xl text-cyan-400 mb-4"></i>{" "}
-              {/* Ícone Adicionado */}
+              <i className="fa-solid fa-headset text-4xl text-cyan-400 mb-4"></i>
               <h3 className="text-2xl font-semibold mb-2 text-gray-100">
                 Sistema 2: CRM Multicanal
               </h3>
@@ -335,7 +324,6 @@ export default function Home() {
                 centralizando comunicações, histórico de vendas e suporte em um
                 só lugar.
               </p>
-              {/* Botão de Ação (Link) */}
               <Link
                 to="#"
                 className="text-cyan-400 font-semibold hover:underline flex items-center gap-2"
@@ -345,16 +333,13 @@ export default function Home() {
               </Link>
             </div>
 
-            {/* Card 3 */}
             <div className="bg-white/10 backdrop-blur-lg border border-white/10 rounded-2xl p-6 shadow-2xl hover:bg-white/20 transition duration-300 text-left">
-              {/* Imagem */}
               <img
                 src={SistemaImg3}
                 alt="Sistema 3 - Analytics"
                 className="w-full h-48 object-cover rounded-xl mb-4"
               />
-              <i className="fa-solid fa-chart-line text-4xl text-cyan-400 mb-4"></i>{" "}
-              {/* Ícone Adicionado */}
+              <i className="fa-solid fa-chart-line text-4xl text-cyan-400 mb-4"></i>
               <h3 className="text-2xl font-semibold mb-2 text-gray-100">
                 Sistema 3: Painel de Analytics
               </h3>
@@ -363,7 +348,6 @@ export default function Home() {
                 interativos, relatórios em tempo real e visualização de dados
                 simplificada.
               </p>
-              {/* Botão de Ação (Link) */}
               <Link
                 to="#"
                 className="text-cyan-400 font-semibold hover:underline flex items-center gap-2"
@@ -385,7 +369,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      {/* Depoimentos */}     
+          
       <section className="relative py-24 text-white overflow-hidden bg-gray-950">
         <div className="relative max-w-6xl mx-auto px-6 md:px-10 text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-white">
@@ -396,119 +380,91 @@ export default function Home() {
             A satisfação de quem confia na FimbaTec para impulsionar seus
             negócios.          
           </p>
-          {/* Grid de Depoimentos */}         
-          <div className="grid md:grid-cols-3 gap-8">
-            {/* Depoimento 1 */}         
+                  
+          <div className="grid md:grid-cols-3 gap-8">        
             <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-8 shadow-2xl hover:bg-white/10 transition duration-300 text-left flex flex-col items-start">
-              <i className="fa-solid fa-quote-left text-3xl text-cyan-400 mb-4"></i>
+              <i className="fa-solid fa-quote-left text-3xl text-blue-400 mb-4"></i>
               <p className="text-gray-300 text-base italic leading-relaxed mb-6 grow">
                 "O sistema que a FimbaTec desenvolve transformou nossa operação.
-                A integração                 de processos reduziu erros e nos
+                A integração de processos reduziu erros e nos
                 deu uma visão clara do negócio. Profissionais extremamente
                 competentes!"        
               </p>
-              {/* Informações do Cliente */}             
+                          
               <div className="flex items-center mt-auto">       
                 <img
                   src={DepoimentoImg1}
                   alt="Cliente 1"
-                  className="w-12 h-12 object-cover rounded-full mr-4 border-2 border-cyan-400"
+                  className="w-12 h-12 object-cover rounded-full mr-4 border-2 border-blue-400"
                 />
                                
-                <div>
-                                 
+                <div>        
                   <h4 className="font-semibold text-gray-100">
                     Ana Clara Souza
-                  </h4>
-                                   
+                  </h4>           
                   <p className="text-sm text-gray-400">
                     CEO, TechInov Soluções
-                  </p>
-                               
-                </div>
-                             
-              </div>
-                         
+                  </p>         
+                </div>         
+              </div>        
             </div>
-            {/* Depoimento 2 */}           
+                      
             <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-8 shadow-2xl hover:bg-white/10 transition duration-300 text-left flex flex-col items-start">
-                           
-              <i className="fa-solid fa-quote-left text-3xl text-cyan-400 mb-4"></i>
-                           
+              <i className="fa-solid fa-quote-left text-3xl text-blue-400 mb-4"></i>  
               <p className="text-gray-300 text-base italic leading-relaxed mb-6 grow">
-                                "Contratamos a consultoria para refatorar nossa
-                arquitetura, e o resultado                 foi *impecável*.
-                Ganho de performance e escalabilidade que não imaginávamos.    
-                            O time é muito profissional e entende profundamente
+                "Contratamos a consultoria para refatorar nossa
+                arquitetura, e o resultado foi *impecável*.
+                Ganho de performance e escalabilidade que não imaginávamos.
+                O time é muito profissional e entende profundamente
                 de tecnologia."              
               </p>
-                            {/* Informações do Cliente */}             
-              <div className="flex items-center mt-auto">
-                               
+                         
+              <div className="flex items-center mt-auto">          
                 <img
                   src={DepoimentoImg2}
                   alt="Cliente 2"
-                  className="w-12 h-12 object-cover rounded-full mr-4 border-2 border-cyan-400"
-                />
-                               
-                <div>
-                                 
+                  className="w-12 h-12 object-cover rounded-full mr-4 border-2 border-blue-400"
+                />          
+                <div>         
                   <h4 className="font-semibold text-gray-100">
                     Roberta Mendes
-                  </h4>
-                                   
+                  </h4>             
                   <p className="text-sm text-gray-400">
                     Diretor de TI, Global Data Corp
-                  </p>
-                                 
-                </div>
-                             
-              </div>
-                         
+                  </p>         
+                </div>       
+              </div>          
             </div>
-                        {/* Depoimento 3 */}           
+                      
             <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-8 shadow-2xl hover:bg-white/10 transition duration-300 text-left flex flex-col items-start">
-                           
-              <i className="fa-solid fa-quote-left text-3xl text-cyan-400 mb-4"></i>
-                           
+              <i className="fa-solid fa-quote-left text-3xl text-blue-400 mb-4"></i>      
               <p className="text-gray-300 text-base italic leading-relaxed mb-6 grow">
-                                "O App mobile superou todas as expectativas.
-                Fluido, com design moderno e                 totalmente adaptado
-                às nossas necessidades. A atenção aos detalhes do UX/UI        
-                        foi o diferencial para a satisfação de nossos usuários."
-                             
+                "O App mobile superou todas as expectativas.
+                Fluido, com design moderno e totalmente adaptado
+                às nossas necessidades. A atenção aos detalhes do UX/UI 
+                foi o diferencial para a satisfação de nossos usuários."        
               </p>
-                            {/* Informações do Cliente */}           
-              <div className="flex items-center mt-auto">
-                               
+          
+              <div className="flex items-center mt-auto">   
                 <img
                   src={DepoimentoImg3}
                   alt="Cliente 3"
                   className="w-12 h-12 object-cover rounded-full mr-4 border-2 border-cyan-400"
-                />
-                               
-                <div>
-                                   
-                  <h4 className="font-semibold text-gray-100">Fernanda Lima</h4>
-                                   
+                />        
+                <div>             
+                  <h4 className="font-semibold text-gray-100">Fernanda Lima</h4>             
                   <p className="text-sm text-gray-400">
                     Gerente de Produto, ConnectApp
-                  </p>
-                               
-                </div>
-                             
-              </div>
-                         
-            </div>
-                     
-          </div>
-                 
+                  </p>         
+                </div>            
+              </div>        
+            </div>     
+          </div>   
         </div>
              
       </section>
       {/* Possibilidades Infinitas */}     
-      <section className="relative py-24 text-white overflow-hidden bg-blue-900/10">
-                {/* Fundo com gradiente sutil */}       
+      <section className="relative py-24 text-white overflow-hidden bg-blue-900/10">      
         <div className="absolute inset-0 bg-linear-to-br from-blue-950 to-gray-900 opacity-95"></div>
                
         <div className="relative max-w-6xl mx-auto px-6 md:px-10 text-center">
@@ -607,7 +563,7 @@ export default function Home() {
         </div>
              
       </section>
-      {/* Nossos Clientes */}
+      
       <section className="py-16 bg-gray-950 text-center">
         <div className="max-w-7xl mx-auto px-6 md:px-10">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
@@ -658,7 +614,7 @@ export default function Home() {
           </Swiper>
         </div>
       </section>
-      {/* Seção FAQ */}
+      
       <section className="py-24 bg-gray-900 text-white">
         <div className="max-w-4xl mx-auto px-6 md:px-10">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-white">
@@ -721,6 +677,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+
       {/* Footer */}
       <Footer />
     </>
