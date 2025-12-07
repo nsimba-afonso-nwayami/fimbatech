@@ -94,13 +94,13 @@ export default function Home() {
           <div className="flex gap-4 mt-8">
             <a
               href="#"
-              className="bg-blue-900 px-6 py-3 rounded-lg text-white font-semibold hover:bg-blue-950 transition shadow-lg"
+              className="bg-blue-600 text-center px-6 py-3 rounded-lg text-white font-semibold hover:bg-blue-700 transition shadow-lg"
             >
               Peça um orçamento
             </a>
             <a
               href="#"
-              className="bg-transparent border border-cyan-400 px-6 py-3 rounded-lg text-cyan-400 font-semibold hover:bg-cyan-400 hover:text-blue-950 transition shadow-md"
+              className="bg-transparent text-center border border-cyan-400 px-6 py-3 rounded-lg text-cyan-400 font-semibold hover:bg-cyan-400 hover:text-blue-950 transition shadow-md"
             >
               Tecnologia
             </a>
@@ -377,7 +377,7 @@ export default function Home() {
           <div className="mt-16">
             <Link
               to="/catalogo"
-              className="bg-blue-600 px-8 py-4 rounded-lg text-white-950 font-bold text-lg hover:bg-blue-700 transition shadow-xl"
+              className="bg-blue-600 text-center px-8 py-4 rounded-lg text-white-950 font-bold text-lg hover:bg-blue-700 transition shadow-xl"
             >
               <i className="fa-solid fa-book-open mr-3"></i>
               Ver Catálogo Completo
@@ -596,7 +596,7 @@ export default function Home() {
                        
             <Link
               to="/contato"
-              className="bg-blue-600 px-10 py-4 rounded-lg text-white-950 font-bold text-xl hover:bg-blue-700 transition shadow-2xl hover:shadow-blue-400/50"
+              className="bg-blue-600 text-center px-10 py-4 rounded-lg text-white-950 font-bold text-xl hover:bg-blue-700 transition shadow-2xl hover:shadow-blue-400/50"
             >
                             <i className="fa-solid fa-rocket mr-3"></i>         
                   Inicie Sua Transformação Digital          
@@ -713,7 +713,7 @@ export default function Home() {
             </p>
             <Link
               to="/contato"
-              className="bg-blue-600 px-8 py-3 rounded-lg text-white-950 font-bold text-lg hover:bg-blue-700 transition shadow-xl"
+              className="bg-blue-600 text-center px-8 py-3 rounded-lg text-white-950 font-bold text-lg hover:bg-blue-700 transition shadow-xl"
             >
               <i className="fa-solid fa-comments mr-3"></i>
               Falar com Consultor
