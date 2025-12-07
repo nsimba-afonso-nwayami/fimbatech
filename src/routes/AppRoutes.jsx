@@ -3,6 +3,7 @@ import Home from "../pages/site/Home";
 import Sobre from "../pages/site/Sobre";
 import Servicos from "../pages/site/Servicos";
 import Tecnologia from "../pages/site/Tecnologia";
+import Contato from "../pages/site/Contato";
 import NotFound from "../pages/site/NotFound";
 
 export default function AppRoutes () {
@@ -13,6 +14,7 @@ export default function AppRoutes () {
             <Route path="/sobre" element={<Sobre />} />
             <Route path="/servicos" element={<Servicos />} />
             <Route path="/tecnologia" element={<Tecnologia />} />
+            <Route path="/contato" element={<Contato />} />
             <Route path="*" element={<NotFound />} />
         </Routes>
     )
