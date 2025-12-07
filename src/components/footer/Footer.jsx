@@ -71,31 +71,17 @@ export default function Footer() {
               </Link>
 
               <Link
-                href="#tecnologia"
+                href="/tecnologia"
                 className="text-gray-400 hover:text-cyan-400 transition"
               >
                 Tecnologia
               </Link>
 
               <Link
-                to="#recursos"
-                className="text-gray-400 hover:text-cyan-400 transition"
-              >
-                Recursos
-              </Link>
-
-              <Link
-                to="#contato"
+                to="/contato"
                 className="text-gray-400 hover:text-cyan-400 transition"
               >
                 Contato
-              </Link>
-
-              <Link
-                to="#faq"
-                className="text-gray-400 hover:text-cyan-400 transition"
-              >
-                FAQ
               </Link>
             </div>
           </div>
