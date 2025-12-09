@@ -140,10 +140,10 @@ export default function Contato() {
                   <li className="flex items-center">
                     <i className="fa-solid fa-envelope text-xl text-cyan-400 mr-4"></i>
                     <a
-                      href="mailto:contato@fimbatec.co.ao"
+                      href="mailto:geral@fimbatec.com"
                       className="hover:text-cyan-400 transition"
                     >
-                      contato@fimbatec.co.ao
+                      geral@fimbatec.com
                     </a>
                   </li>
                   <li className="flex items-start">
@@ -164,10 +164,6 @@ export default function Contato() {
                   <li className="flex justify-between">
                     <span className="font-semibold">Segunda a Sexta:</span>
                     <span>8:00 - 17:00</span>
-                  </li>
-                  <li className="flex justify-between">
-                    <span className="font-semibold">Sábados:</span>
-                    <span>9:00 - 13:00</span>
                   </li>
                 </ul>
               </div>
