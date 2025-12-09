@@ -21,21 +21,19 @@ export default function Servicos() {
           backgroundPosition: "center",
         }}
       >
-        {/* Overlay escuro para garantir legibilidade do texto */}
         <div className="absolute inset-0 bg-blue-950/70 backdrop-blur-sm"></div>
 
         <div className="max-w-6xl mx-auto px-6 relative z-10">
           <h1 className="text-5xl md:text-7xl font-extrabold mb-4">
             Soluções Tecnológicas sob Medida
           </h1>
-          <p className="text-xl md:text-2xl text-cyan-400 font-light">
+          <p className="text-xl md:text-2xl text-blue-400 font-light">
             Impulsionamos o seu negócio com inovação, qualidade e excelência
             técnica.
           </p>
         </div>
       </section>
 
-      {/* Visão Geral - Por que FimbaTec? */}
       <section className="py-24 bg-gray-950 text-white">
         <div className="max-w-6xl mx-auto px-6 text-center">
           <h2 className="text-4xl font-bold mb-6">
@@ -59,7 +57,6 @@ export default function Servicos() {
         </div>
       </section>
 
-      {/* Serviços Principais */}
       <section className="py-24 bg-gray-900 text-white">
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="text-4xl font-bold text-center mb-16">
@@ -67,8 +64,8 @@ export default function Servicos() {
           </h2>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="p-8 bg-gray-950 rounded-xl border-t-4 border-cyan-400 shadow-xl hover:shadow-cyan-400/20 transition duration-300">
-              <i className="fa-solid fa-code text-5xl text-cyan-400 mb-6"></i>
+            <div className="p-8 bg-gray-950 rounded-xl border-t-4 border-blue-400 shadow-xl hover:shadow-cyan-400/20 transition duration-300">
+              <i className="fa-solid fa-code text-5xl text-blue-400 mb-6"></i>
               <h3 className="text-2xl font-semibold mb-3">
                 Desenvolvimento Web Personalizado
               </h3>
@@ -78,8 +75,8 @@ export default function Servicos() {
               </p>
             </div>
 
-            <div className="p-8 bg-gray-950 rounded-xl border-t-4 border-cyan-400 shadow-xl hover:shadow-cyan-400/20 transition duration-300">
-              <i className="fa-solid fa-mobile-alt text-5xl text-cyan-400 mb-6"></i>
+            <div className="p-8 bg-gray-950 rounded-xl border-t-4 border-blue-400 shadow-xl hover:shadow-cyan-400/20 transition duration-300">
+              <i className="fa-solid fa-mobile-alt text-5xl text-blue-400 mb-6"></i>
               <h3 className="text-2xl font-semibold mb-3">
                 Desenvolvimento de Apps Mobile
               </h3>
@@ -89,8 +86,8 @@ export default function Servicos() {
               </p>
             </div>
 
-            <div className="p-8 bg-gray-950 rounded-xl border-t-4 border-cyan-400 shadow-xl hover:shadow-cyan-400/20 transition duration-300">
-              <i className="fa-solid fa-cloud text-5xl text-cyan-400 mb-6"></i>
+            <div className="p-8 bg-gray-950 rounded-xl border-t-4 border-blue-400 shadow-xl hover:shadow-cyan-400/20 transition duration-300">
+              <i className="fa-solid fa-cloud text-5xl text-blue-400 mb-6"></i>
               <h3 className="text-2xl font-semibold mb-3">
                 Serviços de Cloud e DevOps
               </h3>
@@ -100,8 +97,8 @@ export default function Servicos() {
               </p>
             </div>
 
-            <div className="p-8 bg-gray-950 rounded-xl border-t-4 border-cyan-400 shadow-xl hover:shadow-cyan-400/20 transition duration-300">
-              <i className="fa-solid fa-chart-line text-5xl text-cyan-400 mb-6"></i>
+            <div className="p-8 bg-gray-950 rounded-xl border-t-4 border-blue-400 shadow-xl hover:shadow-cyan-400/20 transition duration-300">
+              <i className="fa-solid fa-chart-line text-5xl text-blue-400 mb-6"></i>
               <h3 className="text-2xl font-semibold mb-3">
                 Consultoria e Análise de Sistemas
               </h3>
