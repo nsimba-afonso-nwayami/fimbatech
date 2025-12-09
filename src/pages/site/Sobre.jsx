@@ -31,17 +31,16 @@ export default function Sobre() {
           <h1 className="text-5xl md:text-7xl font-extrabold mb-4">
             Construindo o Futuro da Tecnologia
           </h1>
-          <p className="text-xl md:text-2xl text-cyan-400 font-light">
+          <p className="text-xl md:text-2xl text-blue-400 font-light">
             Conheça a história e o propósito que move a FimbaTec.
           </p>
         </div>
       </section>
 
-      {/* Nossa História e Propósito */}
       <section className="py-24 bg-gray-950 text-white">
         <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <span className="text-cyan-400 font-semibold uppercase tracking-wider mb-2 block">
+            <span className="text-blue-400 font-semibold uppercase tracking-wider mb-2 block">
               Desde 2018
             </span>
             <h2 className="text-4xl font-bold mb-6">
@@ -54,7 +53,7 @@ export default function Sobre() {
               agilidade local com os padrões internacionais de qualidade em
               desenvolvimento.
             </p>
-            <p className="text-gray-300 leading-relaxed border-l-4 border-cyan-400 pl-4 italic">
+            <p className="text-gray-300 leading-relaxed border-l-4 border-blue-400 pl-4 italic">
               "Não construímos apenas código; construímos plataformas que
               definem o sucesso de amanhã."
             </p>
@@ -63,7 +62,7 @@ export default function Sobre() {
               className="mt-8 inline-block bg-blue-700 px-6 py-3 rounded-lg text-white font-semibold hover:bg-blue-600 transition"
             >
               <i className="fa-solid fa-arrow-right mr-2"></i>
-              Fale Conosco
+              Fale Connosco
             </Link>
           </div>
 
@@ -77,7 +76,6 @@ export default function Sobre() {
         </div>
       </section>
 
-      {/* Missão, Visão e Valores */}
       <section className="py-24 bg-gray-900 text-white">
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="text-4xl font-bold text-center mb-16">
@@ -85,8 +83,8 @@ export default function Sobre() {
           </h2>
 
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="p-8 bg-gray-950 rounded-xl border border-cyan-400/10 shadow-lg text-center">
-              <i className="fa-solid fa-rocket text-4xl text-cyan-400 mb-4"></i>
+            <div className="p-8 bg-gray-950 rounded-xl border border-blue-400/10 shadow-lg text-center">
+              <i className="fa-solid fa-rocket text-4xl text-blue-400 mb-4"></i>
               <h3 className="text-2xl font-semibold mb-3">Missão</h3>
               <p className="text-gray-400">
                 Capacitar negócios angolanos e globais através de soluções
@@ -95,8 +93,8 @@ export default function Sobre() {
               </p>
             </div>
 
-            <div className="p-8 bg-gray-950 rounded-xl border border-cyan-400/10 shadow-lg text-center">
-              <i className="fa-solid fa-eye text-4xl text-cyan-400 mb-4"></i>
+            <div className="p-8 bg-gray-950 rounded-xl border border-blue-400/10 shadow-lg text-center">
+              <i className="fa-solid fa-eye text-4xl text-blue-400 mb-4"></i>
               <h3 className="text-2xl font-semibold mb-3">Visão</h3>
               <p className="text-gray-400">
                 Ser reconhecida como a líder em inovação e desenvolvimento de
@@ -105,8 +103,8 @@ export default function Sobre() {
               </p>
             </div>
 
-            <div className="p-8 bg-gray-950 rounded-xl border border-cyan-400/10 shadow-lg text-center">
-              <i className="fa-solid fa-hands-holding-child text-4xl text-cyan-400 mb-4"></i>
+            <div className="p-8 bg-gray-950 rounded-xl border border-blue-400/10 shadow-lg text-center">
+              <i className="fa-solid fa-hands-holding-child text-4xl text-blue-400 mb-4"></i>
               <h3 className="text-2xl font-semibold mb-3">Valores</h3>
               <p className="text-gray-400">
                 Excelência Técnica, Integridade e Transparência, Inovação
@@ -117,7 +115,6 @@ export default function Sobre() {
         </div>
       </section>
 
-      {/* Liderança */}
       <section className="py-24 bg-gray-950 text-white">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h2 className="text-4xl font-bold mb-10">Conheça Nossos Líderes</h2>
@@ -128,7 +125,7 @@ export default function Sobre() {
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div className="flex flex-col items-center">
-              <div className="w-24 h-24 rounded-full mb-3 border-2 border-cyan-400/50 overflow-hidden">
+              <div className="w-24 h-24 rounded-full mb-3 border-2 border-blue-400/50 overflow-hidden">
                 <img
                   src={LiderImg1}
                   alt="Foto de Maria Santos"
@@ -136,11 +133,11 @@ export default function Sobre() {
                 />
               </div>
               <p className="font-semibold text-white">Maria Santos</p>
-              <p className="text-xs text-cyan-400">CEO & Fundadora</p>
+              <p className="text-xs text-blue-400">CEO & Fundadora</p>
             </div>
 
             <div className="flex flex-col items-center">
-              <div className="w-24 h-24 rounded-full mb-3 border-2 border-cyan-400/50 overflow-hidden">
+              <div className="w-24 h-24 rounded-full mb-3 border-2 border-blue-400/50 overflow-hidden">
                 <img
                   src={LiderImg2}
                   alt="Foto de João Silva"
@@ -148,11 +145,11 @@ export default function Sobre() {
                 />
               </div>
               <p className="font-semibold text-white">João Silva</p>
-              <p className="text-xs text-cyan-400">Diretor de Tecnologia</p>
+              <p className="text-xs text-blue-400">Diretor de Tecnologia</p>
             </div>
 
             <div className="flex flex-col items-center">
-              <div className="w-24 h-24 rounded-full mb-3 border-2 border-cyan-400/50 overflow-hidden">
+              <div className="w-24 h-24 rounded-full mb-3 border-2 border-blue-400/50 overflow-hidden">
                 <img
                   src={LiderImg3}
                   alt="Foto de Ana Costa"
@@ -164,7 +161,7 @@ export default function Sobre() {
             </div>
 
             <div className="flex flex-col items-center">
-              <div className="w-24 h-24 rounded-full mb-3 border-2 border-cyan-400/50 overflow-hidden">
+              <div className="w-24 h-24 rounded-full mb-3 border-2 border-blue-400/50 overflow-hidden">
                 <img
                   src={LiderImg4}
                   alt="Foto de Pedro Mendes"
