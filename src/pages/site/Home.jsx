@@ -72,7 +72,6 @@ export default function Home() {
       {/* Header */}
       <Header />
 
-      {/* Hero Section */}
       <section
         className="hero w-full h-[90vh] bg-cover bg-center bg-fixed relative flex items-center"
         style={{ backgroundImage: `url(${HeroImg})` }}
@@ -107,7 +106,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      {/* Nossas Soluções */}
+
       <section className="relative py-24 text-white overflow-hidden">
         <video
           src={VideoHome}
@@ -117,7 +116,6 @@ export default function Home() {
           className="absolute inset-0 w-full h-full object-cover"
         ></video>
 
-        {/* Overlay escuro */}
         <div className="absolute inset-0 bg-black/70 backdrop-blur-sm"></div>
 
         <div className="relative max-w-6xl mx-auto px-6 md:px-10">
@@ -126,7 +124,6 @@ export default function Home() {
           </h2>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
-            {/* Card 1 */}
             <div className="bg-white/10 backdrop-blur-lg border border-white/10 rounded-2xl p-8 hover:bg-white/20 transition shadow-xl">
               <i className="fa-solid fa-gears text-4xl text-blue-400 mb-4"></i>
               <h3 className="text-2xl font-semibold mb-3">
@@ -145,7 +142,6 @@ export default function Home() {
               </a>
             </div>
 
-            {/* Card 2 */}
             <div className="bg-white/10 backdrop-blur-lg border border-white/10 rounded-2xl p-8 hover:bg-white/20 transition shadow-xl">
               <i className="fa-solid fa-lightbulb text-4xl text-blue-400 mb-4"></i>
               <h3 className="text-2xl font-semibold mb-3">
@@ -163,7 +159,6 @@ export default function Home() {
               </a>
             </div>
 
-            {/* Card 3 */}
             <div className="bg-white/10 backdrop-blur-lg border border-white/10 rounded-2xl p-8 hover:bg-white/20 transition shadow-xl">
               <i className="fa-solid fa-object-group text-4xl text-blue-400 mb-4"></i>
               <h3 className="text-2xl font-semibold mb-3">
@@ -181,7 +176,6 @@ export default function Home() {
               </a>
             </div>
 
-            {/* Card 4 */}
             <div className="bg-white/10 backdrop-blur-lg border border-white/10 rounded-2xl p-8 hover:bg-white/20 transition shadow-xl">
               <i className="fa-solid fa-code text-4xl text-blue-400 mb-4"></i>
               <h3 className="text-2xl font-semibold mb-3">
@@ -199,7 +193,6 @@ export default function Home() {
               </a>
             </div>
 
-            {/* Card 5 */}
             <div className="bg-white/10 backdrop-blur-lg border border-white/10 rounded-2xl p-8 hover:bg-white/20 transition shadow-xl">
               <i className="fa-solid fa-mobile-screen-button text-4xl text-blue-400 mb-4"></i>
               <h3 className="text-2xl font-semibold mb-3">
@@ -228,7 +221,7 @@ export default function Home() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-8 hover:bg-white/10 transition duration-300 shadow-2xl">
-              <i className="fa-solid fa-laptop-code text-4xl text-cyan-400 mb-4"></i>
+              <i className="fa-solid fa-laptop-code text-4xl text-blue-400 mb-4"></i>
               <h3 className="text-2xl font-semibold mb-3 text-gray-100">WEB</h3>
               <p className="text-gray-300 text-sm leading-relaxed mb-4">
                 Sistemas, painéis e plataformas rápidas e estáveis.
@@ -237,7 +230,7 @@ export default function Home() {
 
             {/* Card 2 */}
             <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-8 hover:bg-white/10 transition duration-300 shadow-2xl">
-              <i className="fa-solid fa-cloud-arrow-down text-4xl text-cyan-400 mb-4"></i>
+              <i className="fa-solid fa-cloud-arrow-down text-4xl text-blue-400 mb-4"></i>
               <h3 className="text-2xl font-semibold mb-3 text-gray-100">
                 APIs & Integrações IoT
               </h3>
@@ -250,7 +243,7 @@ export default function Home() {
             </div>
 
             <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-8 hover:bg-white/10 transition duration-300 shadow-2xl">
-              <i className="fa-solid fa-mobile-screen text-4xl text-cyan-400 mb-4"></i>
+              <i className="fa-solid fa-mobile-screen text-4xl text-blue-400 mb-4"></i>
               <h3 className="text-2xl font-semibold mb-3 text-gray-100">
                 Mobile
               </h3>
@@ -292,7 +285,7 @@ export default function Home() {
                 alt="Sistema 1 - ERP"
                 className="w-full h-48 object-cover rounded-xl mb-4"
               />
-              <i className="fa-solid fa-server text-4xl text-cyan-400 mb-4"></i>
+              <i className="fa-solid fa-server text-4xl text-blue-400 mb-4"></i>
               <h3 className="text-2xl font-semibold mb-2 text-gray-100">
                 Sistema 1: ERP Inteligente
               </h3>
@@ -302,7 +295,7 @@ export default function Home() {
               </p>
               <Link
                 to="#"
-                className="text-cyan-400 font-semibold hover:underline flex items-center gap-2"
+                className="text-blue-400 font-semibold hover:underline flex items-center gap-2"
               >
                 Ver detalhes
                 <i className="fa-solid fa-arrow-right text-sm"></i>
@@ -315,7 +308,7 @@ export default function Home() {
                 alt="Sistema 2 - CRM"
                 className="w-full h-48 object-cover rounded-xl mb-4"
               />
-              <i className="fa-solid fa-headset text-4xl text-cyan-400 mb-4"></i>
+              <i className="fa-solid fa-headset text-4xl text-blue-400 mb-4"></i>
               <h3 className="text-2xl font-semibold mb-2 text-gray-100">
                 Sistema 2: CRM Multicanal
               </h3>
@@ -326,7 +319,7 @@ export default function Home() {
               </p>
               <Link
                 to="#"
-                className="text-cyan-400 font-semibold hover:underline flex items-center gap-2"
+                className="text-blue-400 font-semibold hover:underline flex items-center gap-2"
               >
                 Ver detalhes
                 <i className="fa-solid fa-arrow-right text-sm"></i>
@@ -339,7 +332,7 @@ export default function Home() {
                 alt="Sistema 3 - Analytics"
                 className="w-full h-48 object-cover rounded-xl mb-4"
               />
-              <i className="fa-solid fa-chart-line text-4xl text-cyan-400 mb-4"></i>
+              <i className="fa-solid fa-chart-line text-4xl text-blue-400 mb-4"></i>
               <h3 className="text-2xl font-semibold mb-2 text-gray-100">
                 Sistema 3: Painel de Analytics
               </h3>
@@ -350,7 +343,7 @@ export default function Home() {
               </p>
               <Link
                 to="#"
-                className="text-cyan-400 font-semibold hover:underline flex items-center gap-2"
+                className="text-blue-400 font-semibold hover:underline flex items-center gap-2"
               >
                 Ver detalhes
                 <i className="fa-solid fa-arrow-right text-sm"></i>
@@ -449,7 +442,7 @@ export default function Home() {
                 <img
                   src={DepoimentoImg3}
                   alt="Cliente 3"
-                  className="w-12 h-12 object-cover rounded-full mr-4 border-2 border-cyan-400"
+                  className="w-12 h-12 object-cover rounded-full mr-4 border-2 border-blue-400"
                 />        
                 <div>             
                   <h4 className="font-semibold text-gray-100">Fernanda Lima</h4>             
@@ -461,107 +454,83 @@ export default function Home() {
             </div>     
           </div>   
         </div>
-             
       </section>
-      {/* Possibilidades Infinitas */}     
+     
       <section className="relative py-24 text-white overflow-hidden bg-blue-900/10">      
         <div className="absolute inset-0 bg-linear-to-br from-blue-950 to-gray-900 opacity-95"></div>
-               
+        
         <div className="relative max-w-6xl mx-auto px-6 md:px-10 text-center">
-                             
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-cyan-400 drop-shadow-lg">
-                        Possibilidades Infinitas          
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-blue-400 drop-shadow-lg">
+            Possibilidades Infinitas          
           </h2>
                    
           <p className="text-gray-200 max-w-4xl mx-auto mb-16 text-xl">
-                        Vamos além do código. Utilizamos tecnologia disruptiva
-            para construir a próxima             geração de sistemas e soluções,
+            Vamos além do código. Utilizamos tecnologia disruptiva
+            para construir a próxima geração de sistemas e soluções,
             garantindo que seu negócio esteja sempre um passo à frente.        
-             
           </p>
-                    {/* Grid de Tendências */}         
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                                    {/* Card 1: IA/ML */}           
+                  
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">          
             <div className="bg-white/5 border border-cyan-400/20 rounded-2xl p-6 shadow-2xl hover:bg-white/10 transition duration-300">
-                           
-              <i className="fa-solid fa-brain text-4xl text-cyan-400 mb-4"></i> 
-                         
+              <i className="fa-solid fa-brain text-4xl text-blue-400 mb-4"></i> 
               <h3 className="text-xl font-semibold mb-3 text-gray-100">
-                                Inteligência Artificial & ML              
+                Inteligência Artificial & ML              
               </h3>
                            
               <p className="text-gray-300 text-sm leading-relaxed">
-                                Criamos algoritmos de IA para automação de
+                Criamos algoritmos de IA para automação de
                 decisões, análise preditiva e personalização de experiências em
                 tempo real.              
-              </p>
-                         
+              </p>      
             </div>
-                        {/* Card 2: Cloud Nativa */}           
+                      
             <div className="bg-white/5 border border-cyan-400/20 rounded-2xl p-6 shadow-2xl hover:bg-white/10 transition duration-300">
-                           
-              <i className="fa-solid fa-cloud text-4xl text-cyan-400 mb-4"></i> 
-                         
+              <i className="fa-solid fa-cloud text-4xl text-blue-400 mb-4"></i>          
               <h3 className="text-xl font-semibold mb-3 text-gray-100">
-                                Infraestrutura Cloud Nativa              
-              </h3>
-                           
+                Infraestrutura Cloud Nativa              
+              </h3>         
               <p className="text-gray-300 text-sm leading-relaxed">
-                                Desenvolvemos arquiteturas resilientes e
+                Desenvolvemos arquiteturas resilientes e
                 otimizadas na Nuvem, prontas para suportar picos e crescimento
                 global.              
-              </p>
-                         
+              </p>      
             </div>
-                        {/* Card 3: Web3/Blockchain */}           
-            <div className="bg-white/5 border border-cyan-400/20 rounded-2xl p-6 shadow-2xl hover:bg-white/10 transition duration-300">
-                           
-              <i className="fa-solid fa-cubes text-4xl text-cyan-400 mb-4"></i> 
-                         
+                        
+            <div className="bg-white/5 border border-cyan-400/20 rounded-2xl p-6 shadow-2xl hover:bg-white/10 transition duration-300">          
+              <i className="fa-solid fa-cubes text-4xl text-blue-400 mb-4"></i>         
               <h3 className="text-xl font-semibold mb-3 text-gray-100">
-                                Web3 e Descentralização              
-              </h3>
-                           
+                Web3 e Descentralização              
+              </h3> 
               <p className="text-gray-300 text-sm leading-relaxed">
-                                Exploramos a descentralização para criar
+                Exploramos a descentralização para criar
                 plataformas seguras, transparentes e imutáveis, construindo o
                 futuro digital.              
-              </p>
-                         
+              </p>     
             </div>
-                                    {/* Card 4: IoT */}           
-            <div className="bg-white/5 border border-cyan-400/20 rounded-2xl p-6 shadow-2xl hover:bg-white/10 transition duration-300">
-                           
-              <i className="fa-solid fa-microchip text-4xl text-cyan-400 mb-4"></i>
-                           
+                                     
+            <div className="bg-white/5 border border-cyan-400/20 rounded-2xl p-6 shadow-2xl hover:bg-white/10 transition duration-300">            
+              <i className="fa-solid fa-microchip text-4xl text-blue-400 mb-4"></i>        
               <h3 className="text-xl font-semibold mb-3 text-gray-100">
-                                IoT e Automação Inteligente              
-              </h3>
-                           
+                IoT e Automação Inteligente              
+              </h3>       
               <p className="text-gray-300 text-sm leading-relaxed">
-                                Conectamos dispositivos e dados em ecossistemas
+                Conectamos dispositivos e dados em ecossistemas
                 inteligentes para otimizar operações, logística e eficiência em
                 campo.              
-              </p>
-                       
-            </div>
-                     
-          </div>
-                              {/* Call to Action */}         
-          <div className="mt-20">
-                       
-            <Link
-              to="/contato"
-              className="bg-blue-600 text-center px-10 py-4 rounded-lg text-white-950 font-bold text-xl hover:bg-blue-700 transition shadow-2xl hover:shadow-blue-400/50"
-            >
-                            <i className="fa-solid fa-rocket mr-3"></i>         
-                  Inicie Sua Transformação Digital          
-            </Link>
-                   
+              </p>   
+            </div>    
           </div>
                  
+          <div className="mt-20">
+            <Link
+              to="/contato"
+              className="bg-blue-600 text-center px-8 py-4 rounded-lg text-white-950 font-bold text-xl hover:bg-blue-700 transition shadow-2xl hover:shadow-blue-400/50"
+            >
+              <i className="fa-solid fa-rocket mr-3"></i>         
+              Inicie Sua Transformação Digital          
+            </Link>  
+          </div>   
         </div>
-             
       </section>
       
       <section className="py-16 bg-gray-950 text-center">
@@ -634,13 +603,13 @@ export default function Home() {
                   aria-expanded={openQuestion === item.id}
                   aria-controls={`faq-answer-${item.id}`}
                 >
-                  <span className="text-lg font-semibold text-gray-100 hover:text-cyan-400 transition-colors">
+                  <span className="text-lg font-semibold text-gray-100 hover:text-blue-400 transition-colors">
                     {item.question}
                   </span>
                   <i
                     className={`fa-solid ${
                       openQuestion === item.id ? "fa-minus" : "fa-plus"
-                    } text-cyan-400 text-xl transition-transform duration-300 transform ${
+                    } text-blue-400 text-xl transition-transform duration-300 transform ${
                       openQuestion === item.id ? "rotate-180" : "rotate-0"
                     }`}
                   ></i>
