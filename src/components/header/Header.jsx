@@ -30,7 +30,7 @@ export default function Header() {
     >
       {/* Logo + ícone */}
       <Link to="/" className="flex items-center gap-2 text-2xl font-bold tracking-wide z-50">
-        <i className="fas fa-microchip text-cyan-400"></i>
+        <i className="fas fa-microchip text-blue-400"></i>
         <span className="text-gray-100">FIMBATEC</span>
       </Link>
 
