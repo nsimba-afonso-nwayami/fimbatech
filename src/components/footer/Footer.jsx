@@ -6,8 +6,8 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 md:px-10 py-16">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 text-sm">
           <div>
-            <h3 className="text-lg font-bold mb-5 text-white border-b border-cyan-400/50 pb-2">
-              <i className="fa-solid fa-phone-volume mr-2 text-cyan-400"></i>
+            <h3 className="text-lg font-bold mb-5 text-white border-b border-blue-400/50 pb-2">
+              <i className="fa-solid fa-phone-volume mr-2 text-blue-400"></i>
               Contato
             </h3>
             <address className="not-italic space-y-2 text-gray-400">
@@ -18,7 +18,7 @@ export default function Footer() {
               <p>
                 <a
                   href="mailto:geral@fimbatec.com"
-                  className="hover:text-cyan-400 transition"
+                  className="hover:text-blue-400 transition"
                 >
                   geral@fimbatec.com
                 </a>
@@ -26,7 +26,7 @@ export default function Footer() {
               <p>
                 <a
                   href="tel:+244927108033"
-                  className="hover:text-cyan-400 transition"
+                  className="hover:text-blue-400 transition"
                 >
                   (244) 927 108 033
                 </a>
@@ -44,42 +44,42 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="text-lg font-bold mb-5 text-white border-b border-cyan-400/50 pb-2">
-              <i className="fa-solid fa-list mr-2 text-cyan-400"></i>
+            <h3 className="text-lg font-bold mb-5 text-white border-b border-blue-400/50 pb-2">
+              <i className="fa-solid fa-list mr-2 text-blue-400"></i>
               Menu
             </h3>
             <div className="flex flex-col space-y-2">
               <Link
                 to="/"
-                className="text-gray-400 hover:text-cyan-400 transition"
+                className="text-gray-400 hover:text-blue-400 transition"
               >
                 Home
               </Link>
 
               <Link
                 to="/sobre"
-                className="text-gray-400 hover:text-cyan-400 transition"
+                className="text-gray-400 hover:text-blue-400 transition"
               >
                 Sobre
               </Link>
 
               <Link
                 to="/servicos"
-                className="text-gray-400 hover:text-cyan-400 transition"
+                className="text-gray-400 hover:text-blue-400 transition"
               >
                 Serviços
               </Link>
 
               <Link
                 href="/tecnologia"
-                className="text-gray-400 hover:text-cyan-400 transition"
+                className="text-gray-400 hover:text-blue-400 transition"
               >
                 Tecnologia
               </Link>
 
               <Link
                 to="/contato"
-                className="text-gray-400 hover:text-cyan-400 transition"
+                className="text-gray-400 hover:text-blue-400 transition"
               >
                 Contato
               </Link>
@@ -87,8 +87,8 @@ export default function Footer() {
           </div>
 
           <div className="md:col-span-1">
-            <h3 className="text-lg font-bold mb-5 text-white border-b border-cyan-400/50 pb-2">
-              <i className="fa-solid fa-envelope-open-text mr-2 text-cyan-400"></i>
+            <h3 className="text-lg font-bold mb-5 text-white border-b border-blue-400/50 pb-2">
+              <i className="fa-solid fa-envelope-open-text mr-2 text-blue-400"></i>
               Mantenha-se Informado
             </h3>
             <p className="text-gray-400 mb-4">
@@ -103,7 +103,7 @@ export default function Footer() {
               <input
                 type="email"
                 placeholder="Seu Email"
-                className="p-3 rounded-lg bg-gray-800 border border-gray-700 text-white placeholder-gray-500 focus:ring-cyan-400 focus:border-cyan-400 transition"
+                className="p-3 rounded-lg bg-gray-800 border border-gray-700 text-white placeholder-gray-500 focus:ring-blue-400 focus:border-blue-400 transition"
                 aria-label="Email para Newsletter"
                 required
               />
@@ -117,29 +117,29 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="text-lg font-bold mb-5 text-white border-b border-cyan-400/50 pb-2">
-              <i className="fa-solid fa-share-nodes mr-2 text-cyan-400"></i>
+            <h3 className="text-lg font-bold mb-5 text-white border-b border-blue-400/50 pb-2">
+              <i className="fa-solid fa-share-nodes mr-2 text-blue-400"></i>
               Siga-nos
             </h3>
             <div className="flex space-x-4 text-2xl">
               <a
                 href="#"
                 aria-label="Facebook"
-                className="text-gray-400 hover:text-cyan-400 transition"
+                className="text-gray-400 hover:text-blue-400 transition"
               >
                 <i className="fab fa-facebook-f"></i>
               </a>
               <a
                 href="#"
                 aria-label="LinkedIn"
-                className="text-gray-400 hover:text-cyan-400 transition"
+                className="text-gray-400 hover:text-blue-400 transition"
               >
                 <i className="fab fa-linkedin-in"></i>
               </a>
               <a
                 href="#"
                 aria-label="Twitter"
-                className="text-gray-400 hover:text-cyan-400 transition"
+                className="text-gray-400 hover:text-blue-400 transition"
               >
                 <i className="fab fa-twitter"></i>
               </a>
@@ -155,13 +155,13 @@ export default function Footer() {
             <div className="space-x-4">
               <Link
                 to="/politica-de-privacidade"
-                className="hover:text-cyan-400 transition"
+                className="hover:text-blue-400 transition"
               >
                 Política de Privacidade
               </Link>
               <Link
                 to="/politica-de-cookies"
-                className="hover:text-cyan-400 transition"
+                className="hover:text-blue-400 transition"
               >
                 Política de Cookies
               </Link>
