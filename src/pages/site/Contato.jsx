@@ -26,7 +26,7 @@ export default function Contato() {
           <h1 className="text-5xl md:text-7xl font-extrabold mb-4">
             Pronto para Inovar?
           </h1>
-          <p className="text-xl md:text-2xl text-cyan-400 font-light">
+          <p className="text-xl md:text-2xl text-blue-400 font-light">
             Deixe-nos saber como podemos ajudar a sua empresa a crescer.
           </p>
         </div>

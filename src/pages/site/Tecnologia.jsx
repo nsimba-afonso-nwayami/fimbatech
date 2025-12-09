@@ -26,7 +26,7 @@ export default function Tecnologia() {
           <h1 className="text-5xl md:text-7xl font-extrabold mb-4">
             Tecnologia que Impulsiona Resultados
           </h1>
-          <p className="text-xl md:text-2xl text-cyan-400 font-light">
+          <p className="text-xl md:text-2xl text-blue-400 font-light">
             Dominamos as ferramentas mais inovadoras para garantir software
             escalável e robusto.
           </p>
