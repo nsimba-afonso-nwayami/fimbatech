@@ -90,7 +90,7 @@ export default function Home() {
           </p>
 
           {/* Botões */}
-          <div className="flex gap-4 mt-8">
+          <div className="flex flex-wrap gap-4 mt-8">
             <a
               href="#"
               className="bg-blue-600 text-center px-6 py-3 rounded-lg text-white font-semibold hover:bg-blue-700 transition shadow-lg"
